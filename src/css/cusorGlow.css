@@ -1,0 +1,12 @@
+.cursor {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #a19efa, transparent);
+  pointer-events: none;
+  transition: transform 0.1s ease-out;
+  filter: blur(20px);
+  z-index: 20;
+  opacity: 0.6;
+}
