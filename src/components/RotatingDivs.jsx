@@ -1,6 +1,7 @@
 import '../css/rotatingDivs.css';
 import { motion } from 'framer-motion';
 const RotatingDivs = () => {
+  // making the rotating divs
   const dots = [];
   const totalDots = 20;
   const radius = 325; // Radius of the circle
@@ -9,6 +10,7 @@ const RotatingDivs = () => {
     const angle = (i / totalDots) * 2 * Math.PI;
     const x = radius * Math.cos(angle);
     const y = radius * Math.sin(angle);
+    // special dot is the dot with gradient
     const isSpecialDot = i === 0;
     dots.push(
       <div

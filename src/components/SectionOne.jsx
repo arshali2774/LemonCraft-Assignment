@@ -2,6 +2,7 @@ import Button from './Button';
 import '../css/star.css';
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
+// naviagtion list
 const Navigation = [
   'About Us',
   'Our Mission',
@@ -13,7 +14,7 @@ const Navigation = [
   'Mint',
   'Contact',
 ];
-
+// reusable list item component
 // eslint-disable-next-line react/prop-types
 const ListItem = ({ text, number }) => {
   return (
@@ -25,6 +26,8 @@ const ListItem = ({ text, number }) => {
 };
 
 const SectionOne = () => {
+  // creating stars on the page as no assets was provided
+  // in this useEffect hook we create stars at random postions and add animations to them.
   useEffect(() => {
     const starField = document.querySelector('#star-field');
     const numOfStars = 100;

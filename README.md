@@ -29,11 +29,11 @@ Assigment to showcase my knowledge in React by building good UI and animations.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/astro-nft-clone.git
+   git clone https://github.com/arshali2774/LemonCraft-Assignment.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd astro-nft-clone
+   cd LemonCraft-Assignment
    ```
 3. Install the dependencies:
    ```bash

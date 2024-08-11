@@ -22,20 +22,27 @@ const App = () => {
   }, []);
   return (
     <div className='bg-[#fefefe] min-h-screen relative overflow-x-hidden'>
+      {/* cursor glow */}
       <div
         className='cursor'
         style={{
           transform: `translate(${position.x - 100}px,${position.y - 100}px)`,
         }}
       ></div>
+      {/* header */}
       <header className='px-[3.8rem] py-10 fixed top-0 left-0 right-0 z-50'>
         <Navbar />
       </header>
+      {/* 5 lines background */}
       <Background />
+      {/* main content */}
       <main className='relative z-10 px-[3.8rem]'>
+        {/* section 1 */}
         <SectionOne />
+        {/* section 2 */}
         <SectionTwo />
       </main>
+      {/* video */}
       <AstronautVideo webmSRC={webmSRC} movSRC={movSRC} />
     </div>
   );

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 // eslint-disable-next-line react/prop-types
 const Button = ({ buttonText, width, margin, animate = false }) => {
+  // reusable button component
   return animate ? (
     <motion.button
       initial={{ opacity: 0, y: 100 }}

@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 /* eslint-disable react/prop-types */
 const AstronautVideo = ({ webmSRC, movSRC }) => {
+  // scaling and positioning video based on scroll progress
   const { scrollYProgress } = useScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);
   const top = useTransform(scrollYProgress, [0, 1], ['28%', '25%']);
